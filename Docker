@@ -1,0 +1,8 @@
+FROM openjdk:17
+
+COPY target/spring-boot-docker-app.jar  /usr/app/
+
+WORKDIR /usr/app/
+
+ENTRYPOINT ["java", "-jar", "mamata-enterprises-app.jar"]
+ 
